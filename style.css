@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Lilita+One&family=Tektur&display=swap');
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #bde0fe;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Borel', cursive;
+    font-size: 4rem;
+}
+
+.cum {
+    font-family: 'Tektur', cursive;
+    color: #14213d;
+}
+
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc8dd;
+    width: 40%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+} */
+
+.rngButton {
+    background-color: #ffc8dd;
+    margin: 20px;
+    min-width: fit-content;
+    font-family: 'Lilita One', cursive;
+    font-size: 3rem;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10%;
+}
+
+.coolInput {
+    width: 50%;
+}
+
+.warning {
+    color: #ff006e;
+    margin: 20px;
+}
+
+@media (max-width: 700px) {
+    .title {
+        font-size: 2rem;
+    }
+    main {
+        width: 90%;
+    }
+}

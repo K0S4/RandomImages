@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNG Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Random Image Generator</h1>
+    <main>
+        <!-- 
+        <input type="number" placeholder="How many pages to open?" class="coolInput" id="uwu"> -->
+        <button onclick="generateImage()" class="rngButton">Random screenshot</button>
+        <!-- <p class="warning">!!!OPENING MULTIPLE PAGES CAN RESOULT IN YOUR IP GETING BANNED!!!</p> -->
+    </main>
+    <p class="cum">Powered by Semen™</p>
+</body>
+<script>
+    function generateImage() {
+        const symbols = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+        let uwUrl = "";
+
+        for (let i = 0; i < 6; i++) {
+            uwUrl += symbols[(Math.floor(Math.random() * symbols.length))];
+
+        }
+
+        open(`https://prnt.sc/${uwUrl}`, "_blank")
+        uwUrl = "";
+
+        //             let idk = document.getElementById("uwu").value;
+
+        // for (let y = 0; y < idk; y++) {
+
+        // }
+        // console.log(idk);
+        // if (idk > 0) {
+
+        // }
+
+    }
+</script>
+
+</html>
